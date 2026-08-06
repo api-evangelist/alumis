@@ -1,7 +1,18 @@
 aid: alumis
 name: Alumis
-description: 'Alumis is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Alumis Inc. (NASDAQ: ALMS) is a clinical-stage biopharmaceutical company
+  headquartered at 280 East Grand Avenue, South San Francisco, California, developing
+  oral therapies for immune-mediated diseases. Incorporated in 2021 as Esker Therapeutics
+  and renamed Alumis in January 2022, its pipeline is led by envudeucitinib, an oral
+  allosteric TYK2 inhibitor in Phase 3 for moderate-to-severe plaque psoriasis and
+  systemic lupus erythematosus; A-005, a CNS-penetrant TYK2 inhibitor for neuroinflammatory
+  and neurodegenerative disease; and lonigutamab, a subcutaneously delivered anti-IGF-1R
+  antibody for thyroid eye disease. Alumis describes a proprietary precision data-analytics
+  platform that integrates genetic, genomic, proteomic, biological and clinical insight,
+  but it is an internal therapeutic-development capability and is not exposed publicly.
+  The company publishes no developer portal, API documentation, SDKs or machine-readable
+  specifications.'
+image: https://www.alumis.com/themes/default/images/logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/alumis/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +23,13 @@ created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Life Sciences
+- Healthcare
+- Immunology
+- Drug Development
+- Clinical Trials
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,46 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/alumis-domain-security.yml
 - type: Website
+  url: https://www.alumis.com/
+- type: About
+  url: https://www.alumis.com/about/
+- type: Careers
+  url: https://www.alumis.com/careers/
+- type: PrivacyPolicy
+  url: https://www.alumis.com/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/alumis-co/
+- type: Twitter
+  url: https://twitter.com/_Alumis
+- type: InvestorRelations
+  url: https://investors.alumis.com/
+- type: SecondaryMarket
   url: https://forgeglobal.com/alumis_stock/
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Alumis is a clinical-stage biopharmaceutical company whose product is oral
+    TYK2/IGF-1R drug candidates, not software; its site has only about/science/pipeline/patients/careers
+    sections and every developer-shaped path (/developers, /api, /docs, /openapi.json,
+    /graphql, /llms.txt, /.well-known/*) returns a hard 404, and the only "alumis"
+    GitHub org is an unrelated Scandinavian TypeScript/C# shop.
+  evidence:
+  - url: https://www.alumis.com/developers
+    status: 404
+  - url: https://www.alumis.com/openapi.json
+    status: 404
+  - url: https://www.alumis.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.alumis.com/llms.txt
+    status: 404
+  - url: https://www.alumis.com/
+    status: 200
+  checked: '2026-08-06'
