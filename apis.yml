@@ -12,6 +12,17 @@ description: 'Alumis Inc. (NASDAQ: ALMS) is a clinical-stage biopharmaceutical c
   but it is an internal therapeutic-development capability and is not exposed publicly.
   The company publishes no developer portal, API documentation, SDKs or machine-readable
   specifications.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://www.alumis.com/themes/default/images/logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/alumis/refs/heads/main/apis.yml
 x-type: company
